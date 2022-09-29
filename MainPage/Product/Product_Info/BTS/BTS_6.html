@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>We Fan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="buyInfo.css">
+    <script src="../../../jQueryAssets/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <!--로그인/회원가입-->
+    <div id ="loginSignUp">
+    <label>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+        <a href="BTS_6.html"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></a> <!--X버튼-->
+      <img src="../../../../Pictures/etc/charlogo.jpg" width="300px" height="300px" alt="Avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></label> 
+    /
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phone" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
+
+
+
+    <!--로고-->
+    <div id = "mainimg">
+    <a href="../../../UI_MainPage.html"><img src="../../../../Logo/MainLogo2.png" width="150px" height="150px"></a>
+    </div>
+
+    <!--메뉴바-->
+    <nav>
+        <div id="nav">
+            <ul class="main">
+                <li><a href="#">GIRL</a>
+                <ul class="sub">
+                        <li><strong>TWICE</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceTWICE.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_TWICE.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_TWICE.html">Goods</a></li>
+                            </ul>
+                        <li><strong>RED VELVET</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceRV.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_RedVelvet.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_RedVelvet.html">Goods</a></li>
+                            </ul>
+                        <li><strong>G-FRIEND</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceGF.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_G_Friend.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_GFriend.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">BOY</a>
+                    <ul class="sub">
+                        <li><strong>BTS</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceBTS.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_BTS.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_BTS.html">Goods</a></li>
+                            </ul>
+                        <li><strong>EXO</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceEXO.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_EXO.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_EXO.html">Goods</a></li>
+                            </ul>
+                        <li><strong>GOT-7</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceG7.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_GOT7.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_GOT7.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">SOLO</a>
+                    <ul class="sub">
+                        <li><strong>IU</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceIU.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_IU.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_IU.html">Goods</a></li>
+                            </ul>
+                        <li><strong>BOA</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceBOA.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_BOA.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_BOA.html">Goods</a></li>
+                        </ul>
+                        <li><strong>CHUNG HA</strong></li>
+                            <ul>
+                              <li><a href="../../../SubPage/Sub_Introduce/IntroduceCH.html">Introduce</a></li>
+                              <li><a href="../../../SubPage/Sub_Album/Album_ChungHa.html">Album</a></li>
+                              <li><a href="../../../SubPage/Sub_Goods/Goods_ChungHa.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="../../../SubPage/Sub_Event/Event4.html">EVENT</a>
+
+                </li>
+            </ul>
+        </div>
+        <script>
+    $(document).ready(function(){
+    $(".main>li").mouseover(function(){
+        $(this).children(".sub").stop().slideDown(200);
+    });
+    $(".main>li").mouseleave(function(){
+        $(this).children(".sub").stop().slideUp(200);
+    });
+
+});
+    </script>
+    </nav>
+    <!--로그인/로고/메뉴바-->
+    
+    <div class="locBOA">
+    <p><a href="../../../UI_MainPage.html">HOME</a> > <a href="../../../SubPage/Sub_Album/Album_BTS.html">BTS(Album)</a> > <a href="BTS_6.html">Buy_Info</a></p>
+    </div>
+    
+    <center>
+    <div id="Bborder">
+        <section>
+            <p>───────────────────────────────────────────────────────────</p>
+        </section>
+        <section><p></p></section>
+        <section>
+            <P_img>
+                <img src="../../../../Pictures/Buy_Info/BTS/b6.jpg" width="555px" height="555px">
+            </P_img>
+            <span>
+                <span class="sp_1">BTS - O! RUL8, 2?</span>
+                <span class="sp_2">Shipping Type : international shipping<br>
+                Delivery Charge : $12.00<br>
+                Origin  : Korea<br>
+                Quantity : 1<br>
+                </span>
+                <span class="sp_3">Total(Quantity) : $12.00 (1 item(s))</span>
+               
+                <a href="../../Product_Buy/BTS/BTS_6.html"><button type="button" class="buy__now" onclick="location.href='' ">Buy Now</button></a>
+            </span>
+        </section>
+        <section>
+            <p>──────────────────────────Product Details─────────────────────────</p>
+        </section>
+        <P_detail>
+            <!--            <a href="#"><img src="태태.jpg" width="960px" height="960px"></a>-->
+            <img src="../../../../Pictures/Buy_Info/Album.jpg">
+        </P_detail>
+
+    </div>
+        </center>
+    
+    <footer>
+    <div class="foo_div1">
+        <span>We Fan Company</span> <span>  |  </span>
+        <span>TEL: 02-765-4682</span> <span>  |  </span>
+        <span>Corporate Registration Number: 172-56-781</span>
+        <p>Address: (8126) 300 Olympic Road, Songpa-gu, Seoul</p>
+        <p></p>
+        <span>Copyright 2019 We Fan Corp. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

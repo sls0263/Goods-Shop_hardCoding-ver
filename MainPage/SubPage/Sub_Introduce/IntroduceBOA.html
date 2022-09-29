@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>We Fan</title>
+    <link rel="stylesheet" href="BOAcss.css">
+    <!--<link rel="shortcuticon" href="../Logo/MainLogo2">-->
+    <script src="../../jQueryAssets/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+    
+<!--로그인/회원가입-->
+    <div id ="loginSignUp">
+    <label>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+        <a href="IntroduceBOA.html"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></a> <!--X버튼-->
+      <img src="../../../Pictures/etc/charlogo.jpg" width="300px" height="300px" alt="Avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></label> 
+    /
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phone" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
+
+    <!--로고-->
+    <div id = "mainimg">
+    <a href="../../UI_MainPage.html"><img src="../../../Logo/MainLogo2.png" width="150px" height="150px"></a>
+    </div>
+
+    <!--메뉴바-->
+    <nav>
+        <div id="nav">
+            <ul class="main">
+                <li><a href="#">GIRL</a>
+                <ul class="sub">
+                        <li><strong>TWICE</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceTWICE.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_TWICE.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_TWICE.html">Goods</a></li>
+                            </ul>
+                        <li><strong>RED VELVET</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceRV.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_RedVelvet.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_RedVelvet.html">Goods</a></li>
+                            </ul>
+                        <li><strong>G-FRIEND</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceGF.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_G_Friend.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_GFriend.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">BOY</a>
+                    <ul class="sub">
+                        <li><strong>BTS</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceBTS.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_BTS.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_BTS.html">Goods</a></li>
+                            </ul>
+                        <li><strong>EXO</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceEXO.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_EXO.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_EXO.html">Goods</a></li>
+                            </ul>
+                        <li><strong>GOT-7</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceG7.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_GOT7.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_GOT7.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">SOLO</a>
+                    <ul class="sub">
+                        <li><strong>IU</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceIU.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_IU.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_IU.html">Goods</a></li>
+                            </ul>
+                        <li><strong>BOA</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceBOA.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_BOA.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_BOA.html">Goods</a></li>
+                        </ul>
+                        <li><strong>CHUNG HA</strong></li>
+                            <ul>
+                              <li><a href="../../SubPage/Sub_Introduce/IntroduceCH.html">Introduce</a></li>
+                              <li><a href="../../SubPage/Sub_Album/Album_ChungHa.html">Album</a></li>
+                              <li><a href="../../SubPage/Sub_Goods/Goods_ChungHa.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="../../SubPage/Sub_Event/Event4.html">EVENT</a>
+
+                </li>
+            </ul>
+        </div>
+        <script>
+    $(document).ready(function(){
+    $(".main>li").mouseover(function(){
+        $(this).children(".sub").stop().slideDown(200);
+    });
+    $(".main>li").mouseleave(function(){
+        $(this).children(".sub").stop().slideUp(200);
+    });
+
+});
+    </script>
+    </nav>
+    <!--로그인/로고/메뉴바-->
+
+
+<div class="mainbackground">
+		<div class="overflow mainbackground" data-sticky='{"start": "0", "end": "100vh"}'>
+			<div class="fullwindow" data-animation='{"opacity": {"0": "1", "50vh": ".1", "100vh": ".05"}, "transform": {"0": "scale(1)", "100vh": "scale(7.5)"}}'>
+				<p3><img src="../../../Pictures/Sub_Introduce/Boa/doboa.png"></p3>
+			</div>
+		</div>
+		<div class="fullwindow" data-animation='{"opacity": {"-45vh": "0", "0": "1"}}'>
+			<p3><img src="../../../Pictures/Sub_Introduce/Boa/boalogo.png" width="500px" height="500px"></p3>
+		</div>
+	</div>
+
+	<div class="fullwindow overflow light" data-sticky='{"start": "0", "end": "150vh"}'>
+        
+		<div class="fullwindow absolute gfimg" data-animation='{"transform": {"50vh": "scale(1) translate(0, 0)", "75vh": "scale(.75) translate(0, 0)", "125vh": "scale(.75) translate(-125%, 0)"}}'>
+            <p4><img src="../../../Pictures/Sub_Introduce/Boa/boamain.gif"></p4>
+            <div class="fullwindow absolute" data-animation='{"opacity": {"25vh": "1", "40vh": "0"}}'>
+                <p6><img src="../../../Pictures/Sub_Introduce/Boa/boaname.png"></p6>
+			</div>
+             <div class="fullwindow absolute" data-animation='{"opacity": {"25vh": "0", "40vh": "1"}}'>
+                <p6><img src="../../../Pictures/Sub_Introduce/Boa/boaintroduce.png"></p6>
+			</div>
+        
+		</div>
+		<div class="fullwindow absolute gfimg2" data-animation='{"transform": {"68vh": "scale(.75) translate(125%, 0)", "118vh": "scale(.75) translate(0, 0)", "150vh": "scale(1) translate(0, 0)"}}'>
+		</div>    
+	</div>
+
+	<hr>
+
+	<div class="fullwindow perspective light" data-sticky='{"start": "0", "end": "200vh"}'>
+		<div class="fullwindow absolute mainbackground" data-animation='{
+			"opacity": {"140vh": "1", "150vh": "0"},
+			"transform": {
+				"50vh": "translate3d(0, 0, 0) rotateX(0)",
+				"75vh": "translate3d(0, 0, -50vh) rotateX(0)",
+				"100vh": "translate3d(0, 0, -100vh) rotateX(70deg)",
+				"125vh": "translate3d(0, 30vh, -100vh) rotateX(70deg)"
+			}}'>
+<section id="timeline">
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b1.jpg) "></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b1.jpg"  width="50%" height="50%">
+      <p>1st Album - ID;Peace B</p>
+      <p>It debuted with this album on 2000.08.19 </p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b2.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b2.jpg"  width="50%" height="50%">
+      <p>1.5th Album - Growing Up</p>
+      <p>It's BoA's 1.5th album</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+      <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b3.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b3.jpg"  width="50%" height="50%">
+      <p>2nd Album - No.1</p>
+      <p>The title song no.1 seems like a song these days even if you still listen to it as your second full-length album</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b4.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b4.jpg"  width="50%" height="50%">
+      <p>2.5th Album - Miracle</p>
+      <p>It's a 2.5th album that complements the 2nd album</p>
+    </div>
+
+  </div>             
+</section>
+		</div>
+		<div class="fullwindow absolute dark" data-animation='{
+			"opacity": {"125vh": "0", "150vh": "1"},
+			"transform": {
+				"125vh": "translate3d(0, -15vh, -100vh) rotateX(70deg)",
+				"150vh": "translate3d(0, 30vh, -100vh) rotateX(70deg)",
+				"175vh": "translate3d(0, 0, -50vh) rotateX(0)",
+				"200vh": "translate3d(0, 0, 0) rotateX(0)"
+			}}'>
+<section id="timeline">
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b5.jpg) "></div>
+      
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b5.jpg"  width="50%" height="50%">
+      <p>5th Album Repackage - MOTO</p>
+      <p>First repackaged album</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b6.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b6.jpg"  width="50%" height="50%">
+      <p>1st Mini Album - ONE SHOT, TWO SHOT</p>
+      <p>First mini album</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b7.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b7.jpg"  width="50%" height="50%">
+      <p>9th Album - WOMAN</p>
+      <p>It's a recent comeback album</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(../../../Pictures/Sub_Introduce/Boa/b8.jpg)"></div>
+
+    <div class="tl-content">
+      <img src="../../../Pictures/Sub_Introduce/Boa/b8.jpg"  width="50%" height="50%">
+      <p>Special Album - Wishing Well</p>
+      <p>An album made from music released during a tour concert in Japan</p>
+    </div>
+
+  </div>             
+</section>
+            
+</div>
+	</div>
+    
+<h2 style="text-align:center">Music Vidio</h2>
+
+<div class="background2">
+<div class="slideshow-container">
+  <div class="mySlides1">
+      <div class="youtube">
+<iframe src="https://www.youtube.com/embed/Xg_4tbLnIOc" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+
+ <div class="mySlides1">
+      <div class="youtube">
+<iframe src="https://www.youtube.com/embed/bKqe9zqMUcI" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+    
+  <div class="mySlides1">
+      <div class="youtube">
+<iframe src="https://www.youtube.com/embed/pykyNOEVqCU" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+    
+    <div class="mySlides1">
+      <div class="youtube">
+<iframe src="https://www.youtube.com/embed/skbnuIhVQUA" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+<h3 style="text-align:center">&nbsp;</h3>
+    
+<script>
+    var slideIndex = [1,1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+	(function() {
+
+		// sticky section
+		let sticky = {
+			elements: document.querySelectorAll('[data-sticky]'),
+			container: 'sticky-container',
+			property: 'position: -webkit-sticky; position: sticky;',
+			// check if browser support position: sticky
+			checkSupport: function() {
+				let element = document.createElement('div');
+				element.style.cssText = sticky.property;
+				return element.style.position.match('sticky') ? true : false;
+			},
+			wrap: function() {
+				if (sticky.checkSupport()) {
+					for (let i = 0; i < sticky.elements.length; i++) {
+						// make sure that we wrap sticky only once
+						if (!sticky.elements[i].parentNode.classList.contains(sticky.container)) {
+							// wrap sticky only if its doesn't have a parent
+							if (sticky.elements[i].parentNode.tagName.toLowerCase() == 'body') {
+								let container = document.createElement('div');
+								container.classList.add(sticky.container);
+								container.style.position = 'relative';
+								sticky.elements[i].parentNode.insertBefore(container, sticky.elements[i]);
+								container.appendChild(sticky.elements[i]);
+							} else {
+								sticky.elements[i].parentNode.classList.add(sticky.container);
+								// change static position to relative to properly get the offsetTop in animation.get
+								if (!sticky.elements[i].parentNode.style.position.length) {
+									sticky.elements[i].parentNode.style.position = 'relative';
+								}
+							}
+						}
+					}
+				}
+			},
+			get: function() {
+				if (sticky.checkSupport()) {
+					for (let i = 0; i < sticky.elements.length; i++) {
+						// get params about start/end of sticky position
+						let params = sticky.elements[i].getAttribute('data-sticky');
+						params = JSON.parse(params);
+						params.verify = [];
+						// break the params string to separate the numbers inside
+						params.verify.push(params.start.split(/(-?\d*\.?\d+)/).filter(function(e) {return e === 0 || e}));
+						params.verify.push(params.end.split(/(-?\d*\.?\d+)/).filter(function(e) {return e === 0 || e}));
+						// verify params for missing values like units type or parentheses etc
+						validation.autocomplete(params.verify);
+						// convert any type of keys to the pixels
+						let start = convert.unitsToPixels(params.verify[0][0], params.verify[0][1]);
+						start = -start + 0;
+						let end = convert.unitsToPixels(params.verify[1][0], params.verify[1][1]);
+						// get correct offset until the element is not a sticky
+						let originalPosition = sticky.elements[i].style.position;
+						sticky.elements[i].style.position = 'static';
+						let staticOffset = sticky.elements[i].offsetTop;
+						sticky.elements[i].style.position = originalPosition;
+						sticky.elements[i].setAttribute('offset-top', staticOffset);
+						// compose the min-height for the container
+						end += staticOffset;
+						end += sticky.elements[i].offsetHeight;
+						// apply params back to an elements
+						sticky.set(sticky.elements[i], sticky.elements[i].parentElement, start, end);
+					}
+				}
+			},
+			set: function(element, container, start, end) {
+				if (!element.style.position.match('sticky')) {
+					// actually make the element sticky
+					element.style.cssText = (element.getAttribute('style') || '') + sticky.property;
+				}
+				element.style.top = start + 'px';
+				container.style.minHeight = end + 'px';
+			}
+		};
+
+		// animation section
+		let animation = {
+			attribute: 'data-animation',
+			elements: false,
+			list: [],
+			status: {
+				before: 'before',
+				active: 'active',
+				after: 'after'
+			},
+			get: function() {
+				if (!animation.elements) {
+					animation.elements = document.querySelectorAll('[' + animation.attribute + ']');
+				}
+				animation.list = [];
+				for (let i = 0; i < animation.elements.length; i++) {
+					// get correct top position
+					// if animated element is inside the sticky, its top position moves along scroll
+					let top = correctTop(animation.elements[i]);
+					// get params about position keys and animated values
+					let params = animation.elements[i].getAttribute(animation.attribute);
+					// to preserve the order of the keys, wrap each of them in an array of one element
+					let beforeFirstKey = /\:(\s+)?\{(\s+)?\"/g;
+					let beforeNextKeys = /\"(\s+)?\,(\s+)?\"/g;
+					let afterEachKey = /\"(\s+)?\:(\s+)?\"/g;
+					params = params.replace(beforeFirstKey, ': {"[').replace(beforeNextKeys, '", "[').replace(afterEachKey, ']": "');
+					params = JSON.parse(params);
+					// create an array and fill it with verified params
+					let paramsVerified = [];
+					for (let property in params) {
+						let list = {};
+						list[property] = {
+							'position': [],
+							'values': [],
+							'status': null,
+							'locked': false
+						};
+						// break the params string to separate the numbers inside
+						for (let key in params[property]) {
+							let position = key.replace(/\[|\]/g, '').split(/(-?\d*\.?\d+)/).filter(function(e) {return e === 0 || e});
+							let values = params[property][key].split(/(-?\d*\.?\d+)/).filter(function(e) {return e === 0 || e});
+							list[property]['position'].push(position);
+							list[property]['values'].push(values);
+						}
+						// verify params for missing values like units type or parentheses etc
+						validation.autocomplete(list[property]['position']);
+						validation.autocomplete(list[property]['values']);
+						for (let j = 0; j < list[property]['position'].length; j++) {
+							let numbers = list[property]['position'][j][0];
+							let units = list[property]['position'][j][1];
+							// convert any type of keys to the pixels
+							list[property]['position'][j] = convert.unitsToPixels(numbers, units) + top;
+						}
+						paramsVerified.push(list);
+					}
+					// make a global list of animated elements with them positions, values and statuses
+					animation.list.push({
+						'element': animation.elements[i],
+						'params': paramsVerified
+					});
+				}
+			},
+			detect: function() {
+				let scroll = window.pageYOffset;
+				for (let i = 0; i < animation.list.length; i++) {
+					let properties = animation.list[i]['params'];
+					for (let j = 0; j < properties.length; j++) {
+						let percent;
+						let property;
+						let params;
+						for (let key in properties[j]) {
+							property = key;
+						}
+						params = properties[j][property];
+						let position = params['position'];
+						let first = 0;
+						let last = position.length-1;
+						// the element is before the first position key of its animation, apply changes only once
+						if (scroll < position[first] && params['status'] != animation.status.before) {
+							params['status'] = animation.status.before;
+							percent = 0;
+							animation.set(animation.list[i], percent, first, first, j, property);
+						}
+						// the element is after the last position key of its animation, apply changes only once
+						else if (scroll >= position[last] && params['status'] != animation.status.after) {
+							params['status'] = animation.status.after;
+							percent = 100;
+							animation.set(animation.list[i], percent, last, last, j, property);
+						}
+						// the element is between the first and last position keys of its animation
+						else if (scroll >= position[first] && scroll < position[last]) {
+							if (params['status'] != animation.status.active) {
+								params['status'] = animation.status.active;
+							}
+							// animation has only two position keys (without intermediate)
+							if (position.length == 2) {
+								percent = convert.pixelsToPercent(position[first], position[last], scroll);
+								animation.set(animation.list[i], percent, first, last, j, property);
+							}
+							// animation has intermediate position keys
+							else {
+								for (let k = 0; k < position.length; k++) {
+									// looking for keys between which we are now
+									if (position[k+1] && scroll >= position[k] && scroll < position[k+1]) {
+										// at the first entry in any case, apply the changes
+										// next time animate only if the values between keys are not identical
+										if (!params['locked']) {
+											percent = convert.pixelsToPercent(position[k], position[k+1], scroll);
+											animation.set(animation.list[i], percent, k, k+1, j, property);
+										}
+										// compare values between keys, if they are the same - lock
+										let start = '';
+										let end = '';
+										for (let l = 0; l < params['values'][k].length; l++) {
+											start += params['values'][k][l];
+											end += params['values'][k+1][l];
+										}
+										if (start == end && !params['locked']) {
+											params['locked'] = true;
+										} else if (start != end && params['locked']) {
+											params['locked'] = false;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			set: function(element, percent, start, end, id, property) {
+				start = element['params'][id][property]['values'][start];
+				end = element['params'][id][property]['values'][end];
+				// collect the value back to string
+				let value = '';
+				for (let i = 0; i < start.length; i++) {
+					if (percent == 0) {
+						value += start[i];
+					} else if (percent == 100) {
+						value += end[i];
+					} else {
+						if (validation.numbers(start[i])) {
+							value += convert.percentToValue(start[i], end[i], percent);
+						} else {
+							value += start[i];
+						}
+					}
+				}
+				// apply changes to an element
+				window.requestAnimationFrame(function() {
+					if (property != 'opacity') {
+						element['element'].style['-webkit-' + property] = value;
+					}
+					element['element'].style[property] = value;
+				});
+			}
+		};
+
+		let validation = {
+			numbers: function(data) {
+				if (typeof data == 'number') return true;
+				else if (data.match(/\d/)) return true;
+				else return false;
+			},
+			autocomplete: function(data) {
+				// get the longest string
+				let completed = data[0].slice();
+				for (let i = 0; i < data.length; i++) {
+					if (data[i].length > completed.length) {
+						completed = data[i].slice();
+					}
+				}
+				// get the longest substrings except numbers
+				for (let i = 0; i < data.length; i++) {
+					for (let j = 0; j < completed.length; j++) {
+						if (data[i][j] && !validation.numbers(data[i][j])) {
+							if (data[i][j].length > completed[j].length) {
+								completed[j] = data[i][j];
+							}
+						}
+					}
+				}
+				// correct the wrong substrings except numbers, in each string
+				for (let i = 0; i < completed.length; i++) {
+					for (let j = 0; j < data.length; j++) {
+						if (data[j][i]) {
+							if (validation.numbers(data[j][i])) {
+								data[j][i] = +data[j][i];
+							} else if (!validation.numbers(data[j][i]) && data[j][i] != completed[i]) {
+								data[j][i] = completed[i];
+							}
+						} else {
+							if (validation.numbers(completed[i])) {
+								data[j][i] = +completed[i];
+							} else {
+								data[j][i] = completed[i];
+							}
+						}
+					}
+				}
+				return data;
+			}
+		};
+
+		let convert = {
+			unitsToPixels: function(numbers, units) {
+				units = units || 'px';
+				if (units.match('px')) {return numbers}
+				else if (units.match('vh')) {return (numbers / 100) * document.documentElement.clientHeight}
+				else if (units.match('vw')) {return (numbers / 100) * document.documentElement.clientWidth}
+			},
+			pixelsToPercent: function(a, b, pixels) {
+				return ((pixels - a) * 100) / (b - a);
+			},
+			percentToValue: function(a, b, percent) {
+				return ((percent * (b - a)) / 100) + a;
+			}
+		};
+
+		let correctTop = function(element) {
+			let top = 0;
+			while(element && !isNaN(element.offsetTop)) {
+				if (!element.style.position.match('sticky')) {
+					top += element.offsetTop - element.scrollTop;
+				} else {
+					let originalPosition = element.style.position;
+					element.style.position = 'relative';
+					top += element.offsetTop - element.scrollTop;
+					element.style.position = originalPosition;
+				}
+				element = element.offsetParent;
+			}
+			return top;
+		};
+
+		let resizeEnd = function(params) {
+			let startWidth = document.documentElement.clientWidth;
+			let startHeight = document.documentElement.clientHeight;
+			setTimeout(function() {
+				let endWidth = document.documentElement.clientWidth;
+				let endHeight = document.documentElement.clientHeight;
+				if (startWidth == endWidth && startHeight == endHeight) {
+					// end of resize event
+					params();
+				}
+			}, 50);
+		};
+
+
+
+		// initialization
+		// get data and set keys and params
+		sticky.wrap();
+		sticky.get();
+		animation.get();
+		animation.detect();
+
+		// detect animation keys
+		window.addEventListener('scroll', function() {
+			animation.detect();
+		});
+
+		// get updated data and set new keys and params
+		window.addEventListener('resize', function() {
+			resizeEnd(function() {
+				sticky.get();
+				animation.get();
+				animation.detect();
+			});
+		});
+
+
+
+	}());
+});
+    </script>
+    
+    <a id="MOVE_TOP_BTN" href="#"><Button>TOP</Button></a>
+    
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MOVE_TOP_BTN').fadeIn();
+            } else {
+                $('#MOVE_TOP_BTN').fadeOut();
+            }
+        });
+        
+        $("#MOVE_TOP_BTN").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 800);
+            return false;
+        });
+    });
+</script>
+    
+    <footer>
+    <div class="foo_div1">
+        <span>We Fan Company</span> <span>  |  </span>
+        <span>TEL: 02-000-0000</span> <span>  |  </span>
+        <span>Corporate Registration Number: 000-00-00000</span>
+        <p>Address: (00000) Songpa-gu, Seoul OOOOO OO</p>
+        <p></p>
+        <span>Copyright 2019 We Fan Corp. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+</body>
+</html>

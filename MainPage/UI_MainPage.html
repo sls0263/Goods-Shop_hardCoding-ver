@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>We Fan</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="shortcuticon" href="../Logo/MainLogo2">-->
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+   <!--배경 애니메이션-->
+   <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+</div>
+  <!--배경 애니메이션 끝-->
+
+    <!--로그인/회원가입-->
+    <div id ="loginSignUp">
+    <label>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+        <a href="UI_MainPage.html"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></a> <!--X버튼-->
+      <img src="../Pictures/etc/charlogo.jpg" width="300px" height="300px" alt="Avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></label>
+    /
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
+
+
+
+    <!--로고-->
+    <div id = "mainimg">
+    <a href="UI_MainPage.html"><img src="../Logo/MainLogo2.png" width="150px" height="150px"></a>
+    </div>
+
+    <!--메뉴바-->
+    <nav>
+        <div id="nav">
+            <ul class="main">
+                <li><a href="#">GIRL</a>
+                <ul class="sub">
+                        <li><strong>TWICE</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceTWICE.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_TWICE.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_TWICE.html">Goods</a></li>
+                            </ul>
+                        <li><strong>RED VELVET</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceRV.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_RedVelvet.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_RedVelvet.html">Goods</a></li>
+                            </ul>
+                        <li><strong>G-FRIEND</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceGF.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_G_Friend.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_GFriend.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">BOY</a>
+                    <ul class="sub">
+                        <li><strong>BTS</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceBTS.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_BTS.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_BTS.html">Goods</a></li>
+                            </ul>
+                        <li><strong>EXO</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceEXO.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_EXO.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_EXO.html">Goods</a></li>
+                            </ul>
+                        <li><strong>GOT-7</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceG7.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_GOT7.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_GOT7.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="#">SOLO</a>
+                    <ul class="sub">
+                        <li><strong>IU</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceIU.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_IU.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_IU.html">Goods</a></li>
+                            </ul>
+                        <li><strong>BOA</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceBOA.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_BOA.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_BOA.html">Goods</a></li>
+                        </ul>
+                        <li><strong>CHUNG HA</strong></li>
+                            <ul>
+                              <li><a href="SubPage/Sub_Introduce/IntroduceCH.html">Introduce</a></li>
+                              <li><a href="SubPage/Sub_Album/Album_ChungHa.html">Album</a></li>
+                              <li><a href="SubPage/Sub_Goods/Goods_ChungHa.html">Goods</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="SubPage/Sub_Event/Event4.html">EVENT</a>
+
+                </li>
+            </ul>
+        </div>
+        <script>
+    $(document).ready(function(){
+    $(".main>li").mouseover(function(){
+        $(this).children(".sub").stop().slideDown(200);
+    });
+    $(".main>li").mouseleave(function(){
+        $(this).children(".sub").stop().slideUp(200);
+    });
+
+});
+    </script>
+    </nav>
+    <!--로그인/로고/메뉴바-->
+
+    <div id="mainbanner">
+
+        <!--메인베너-->
+        <div id="wrapper">
+      <div id="slider-wrap">
+          <ul id="slider">
+              <li>
+<a href="SubPage/Sub_Event/Sub_Event_Info/instargram_Event.html"><img src="../Pictures/Main_Banner/Instar_Event_Banner.jpg" width="1000px" height="400px"></a>
+             </li>
+
+             <li>
+<a href="SubPage/Sub_Introduce/IntroduceGF.html"><img src="../Pictures/Main_Banner/G_Friend_Banner.jpg" width="1000px" height="400px"></a>
+             </li>
+
+             <li>
+<a href="Product/Product_Info/BTS-G/BTS_4.html"><img src="../Pictures/Main_Banner/NewProduct_Banner.jpg" width="1000px" height="400px"></a>
+             </li>
+
+             <li>
+<a href="Product/Product_Info/BTS-G/BTS_5.html"><img src="../Pictures/Main_Banner/NewProduct2_Banner.jpg" width="1000px" height="400px"></a>
+             </li>
+
+              <li>
+<img src="../Pictures/Main_Banner/BTS_HBD_Banner.jpg" width="1000px" height="400px">
+             </li>
+
+              <li>
+<img src="../Pictures/Main_Banner/BTS_Concert_Banner.jpg" width="1000px" height="400px">
+            </li>
+          </ul>
+
+           <!--controls-->
+          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+          <div id="counter"></div>
+
+          <div id="pagination-wrap">
+            <ul>
+            </ul>
+          </div>
+      </div>
+   </div>
+</div>
+
+    <script>
+var pos = 0;
+//number of slides
+var totalSlides = $('#slider-wrap ul li').length;
+//get the slide width
+var sliderWidth = $('#slider-wrap').width();
+
+
+$(document).ready(function(){
+    //set width to be 'x' times the number of slides
+    $('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
+
+    //next slide
+    $('#next').click(function(){
+        slideRight();
+    });
+
+    //previous slide
+    $('#previous').click(function(){
+        slideLeft();
+    });
+
+    //자동 슬라이더(타이머)
+    var autoSlider = setInterval(slideRight, 4000);
+
+    $.each($('#slider-wrap ul li'), function() {
+       var li = document.createElement('li');
+       $('#pagination-wrap ul').append(li);
+    });
+
+    //counter
+    countSlides();
+
+    //pagination
+    pagination();
+
+    //hide/show controls/btns when hover
+    //pause automatic slide when hover
+    $('#slider-wrap').hover(
+      function(){ $(this).addClass('active'); clearInterval(autoSlider); },
+      function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 4000); }
+    );
+
+});
+
+function slideLeft(){
+    pos--;
+    if(pos==-1){ pos = totalSlides-1; }
+    $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos));
+
+    //*> optional
+    countSlides();
+    pagination();
+}
+
+function slideRight(){
+    pos++;
+    if(pos==totalSlides){ pos = 0; }
+    $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos));
+
+    //*> optional
+    countSlides();
+    pagination();
+}
+
+function countSlides(){
+    $('#counter').html(pos+1 + ' / ' + totalSlides);
+}
+
+function pagination(){
+    $('#pagination-wrap ul li').removeClass('active');
+    $('#pagination-wrap ul li:eq('+pos+')').addClass('active');
+}
+    </script>
+    <!--매인 베너 끝-->
+
+    <!--베스트셀러-->
+    <div id="mainfont">
+    <p>Best Seller</p>
+    </div>
+
+    <div id="BSimg">
+    <section2>
+    <picture>
+        <div class="scale">
+    <a href="../MainPage/Product/Product_Info/BOA-G/BOA_6.html"><img src="../Pictures/Main_BestSell/BOA.jpg"></a>
+            </div>
+        </picture>
+
+    <picture>
+        <div class="scale">
+    <a href="../MainPage/Product/Product_Info/BTS-G/BTS_6.html"><img src="../Pictures/Main_BestSell/BTS.jpg"></a>
+            </div>
+        </picture>
+
+    <picture>
+        <div class="scale">
+    <a href="../MainPage/Product/Product_Info/G_Friend-G/GF_6.html"><img src="../Pictures/Main_BestSell/GF.jpg"></a>
+            </div>
+        </picture>
+    </section2>
+        </div>
+    <!--베스트셀러 끝-->
+
+    <!--뉴 앨범-->
+    <div id="mainfont">
+    <p>New Album</p>
+    </div>
+
+    <div id="NAimg">
+    <section2>
+        <picture>
+            <div class="cont">
+    <a href="Product/Product_Info/BTS/BTS_1.html"><img src="../Pictures/Main_NewAlbum/BTS.png" alt="" class="image"><div class="overlay">[BTS] Persona<br>$12</div></a>
+            </div>
+        </picture>
+
+        <picture>
+            <div class="cont">
+    <a href="Product/Product_Info/G_Friend/GF_1.html"><img src="../Pictures/Main_NewAlbum/G_Friend.png" alt="" class="image"><div class="overlay">[GF] Fever season<br>$10.6</div></a>
+            </div>
+        </picture>
+
+        <picture>
+            <div class="cont">
+    <a href="Product/Product_Info/IU/IU_2.html"><img src="../Pictures/Main_NewAlbum/IU.png" alt="" class="image"><div class="overlay">[IU] Love poem<br>$11</div></a>
+            </div>
+        </picture>
+
+        <picture>
+            <div class="cont">
+    <a href="Product/Product_Info/TWICE/TW_1.html"><img src="../Pictures/Main_NewAlbum/TWICE.png" alt="" class="image"><div class="overlay">[TW] Feel Special<br>$12</div></a>
+            </div>
+        </picture>
+    </section2>
+    </div>
+
+    <div id="mainfont">
+    <p>Event</p>
+    </div>
+
+    <div id="EVimg">
+    <section2>
+        <picture>
+            <a href="../MainPage/SubPage/Sub_Event/Sub_Event_Info/instargram_Event.html"><img src="../Pictures/Main_Event/InstarEvent.jpg"></a>
+        </picture>
+        <picture>
+            <a href="../MainPage/SubPage/Sub_Event/Sub_Event_Info/RedVelvet_Event.html"><img src="../Pictures/Main_Event/OpenEvent.jpg"></a>
+        </picture>
+    </section2>
+    </div>
+
+    <footer>
+    <div class="foo_div1">
+        <span>We Fan Company</span> <span>  |  </span>
+        <span>TEL: 02-765-4682</span> <span>  |  </span>
+        <span>Corporate Registration Number: 172-56-781</span>
+        <p>Address: (8126) 300 Olympic Road, Songpa-gu, Seoul</p>
+        <p></p>
+        <span>Copyright 2019 We Fan Corp. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+</body>
+</html>

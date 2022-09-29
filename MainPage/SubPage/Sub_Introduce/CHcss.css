@@ -1,0 +1,691 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/*RESET*/
+* { margin: 0; padding: 0; }
+body { font: 17px 'Nanum Gothic', sans-serif; }
+a { text-decoration: none; color: #404040; }
+li { list-style: none; }
+
+/*BODY*/
+#loginSignUp {
+    text-align: center;
+    margin-left: 835px;
+    margin-bottom: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #fff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(71,78,98,0.4); /* 로그인창 누를 시 뒤 색깔 */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* 로그인 창 크기 */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.close2 {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*로그인끝*/
+#mainimg {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto; /*센터정렬*/
+}
+
+#nav {
+    width: 1060px;
+    margin-top: 10px;
+    position : relative;
+    margin: 0 auto;
+
+}
+
+#nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main {
+    margin: 30px;
+}
+
+.main>li {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+}
+
+.main>li:hover .sub {
+    /*display: block;*/
+}
+
+.main>li a {
+    display: block;
+    transition: all 0.3s;
+}
+
+.main>li a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #eee;
+    opacity: 0.9;
+}
+
+html, body {
+	margin: 0;
+}
+hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #222;
+}
+span {
+	display: inline-block;
+}
+
+
+.fullwindow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100vh;
+}
+.overflow {
+	overflow: hidden;
+}
+.absolute {
+	position: absolute !important;
+}
+.perspective {
+	-webkit-perspective: 150vh;
+	perspective: 150vh;
+}
+.mainbackground {
+	background-color: #e5cdfb;
+	color: black;
+}
+
+.gfimg {
+	background-color: #e5cdfb;
+}
+.gfimg2 {
+	background-image: url(../../../Pictures/Sub_Introduce/ChungHa/chmain2.jpg);
+    background-size: cover;
+}
+.light {
+	background: white;
+	color: black;
+}
+
+p2 {
+	position: absolute;
+	margin: 0 15%;
+	width: 70%;
+	top: 10%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	font: 40pt sans-serif;
+	text-align: center;
+}
+
+p3 {
+	position: absolute;
+	margin: 0 15%;
+	width: 70%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	font: 45pt sans-serif;
+	text-align: center;
+}
+p4 {
+	position: absolute;
+    margin: 0 5%;
+    width: 100%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	
+}
+
+p5 {
+	position: absolute;
+    margin: 0 55%;
+    width: 100%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+
+}
+
+p6 {
+    position: absolute;
+    margin: 0 55%;
+    width: 100%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+p7 {
+    position: absolute;
+    margin: 0 15%;
+    width: 100%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+@media (max-width:719px) {
+	p {
+		font-size: 1rem;
+	}
+}
+
+
+#timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color:#ffffff;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tl-item:after {
+  background: rgba(229, 205, 251, 0.65);
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: -webkit-linear-gradient(top, transparent 0%, black 75%);
+  background: linear-gradient(to bottom, transparent 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+          transform: translate3d(0, 0, 0) translateY(50%);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) translateY(0);
+          transform: translate3d(0, 0, 0) translateY(0);
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.75s ease 0.5s;
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.tl-content {
+  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+          transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+.tl-year p {
+  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 35pt;
+  line-height: 0;
+  color: #000000;
+}
+
+.tl-bg {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+
+footer {
+    background-color: #a4a4a4;
+}
+
+.foo_div {
+    float: left;
+}
+
+.foo_div1 {
+    text-align: center;
+}
+
+.foo_div1 span {
+    font-size: 11px;
+    color: white;
+}
+
+.foo_div1 p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: white;
+}
+
+
+
+
+
+label2 {
+	background: #444;
+	color: #fff;
+	-webkit-transition: -webkit-transform 400ms ease-out;
+	transition: -webkit-transform 400ms ease-out;
+	transition: transform 400ms ease-out;
+	transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+	display: inline-block;
+  min-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 100vh;
+}
+
+form2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	white-space: nowrap;
+}
+input2 {
+	position: absolute;
+}
+
+.keys2 {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+	opacity: 0;
+}
+
+input2:focus ~ .keys {
+	opacity: 0.8;
+}
+
+input2:nth-of-type(1):checked ~ label:nth-of-type(1), 
+input2:nth-of-type(2):checked ~ label:nth-of-type(2),
+input2:nth-of-type(3):checked ~ label:nth-of-type(3),
+input2:nth-of-type(4):checked ~ label:nth-of-type(4){
+   z-index: 0;
+}
+
+input2:nth-of-type(1):checked ~ label {
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+}
+
+input2:nth-of-type(2):checked ~ label {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	        transform: translate3d(-100%, 0, 0);
+}
+
+input2:nth-of-type(3):checked ~ label {
+	-webkit-transform: translate3d(-200%, 0, 0);
+	        transform: translate3d(-200%, 0, 0);
+}
+
+input2:nth-of-type(4):checked ~ label {
+	-webkit-transform: translate3d(-300%, 0, 0);
+	        transform: translate3d(-300%, 0, 0);
+}
+
+label2 {
+	background: #444;
+	background-size: cover;
+	font-size: 3rem;
+}
+
+label2[for="diamonds"],
+label2[for="hearts"] {
+	background: #cc0000;
+}
+
+label2:before,
+label2:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 1rem;
+	font-size: 3rem;
+	height: 10rem;
+	vertical-align: middle;
+	line-height: 10rem;
+	top: 50%;
+	-webkit-transform: translate3d(0, -50%, 0);
+	        transform: translate3d(0, -50%, 0);
+	cursor: pointer;
+}
+
+label2:before {
+	content: "\276D";
+	right: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+label2:after {
+	content: "\276C";
+	left: 100%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+/* 슬라이드 쇼 관련*/
+* {box-sizing: border-box}
+.mySlides1, {display: none}
+.img {vertical-align: middle;}
+.img {vertical-align: middle;}
+
+h2{
+    background-color: #e5cdfb;
+    font-size: 40pt;   
+}
+
+h3{
+    background-color: #e5cdfb;
+    font-size: 40pt;
+    color: #e5cdfb;
+}
+
+.background2 {
+    background-color: #e5cdfb;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.youtube iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+a#MOVE_TOP_BTN {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+}
+
+a#MOVE_TOP_BTN Button {
+    background-color: white;
+    opacity: 90%;
+}
